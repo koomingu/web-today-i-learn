@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+     <meta property="og:title" content="밍구의 자기소개 페이지" />
+     <meta property="og:description" content="성장하는 개발자, 8기 BE 밍구(구민서)를 소개합니다!" />
+     <meta property="og:image" content="./images/profile.jpg" />
 
-    <title>Today I Learn</title>
+    <title>밍구임밍밍밍</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
   </head>
+
   <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
-    </nav>
+  <header>
+      <nav class="top-nav">
+          <span class="nav-logo">My Page</span>
+          <ul class="nav-links">
+              <li><a href="#about">자기소개</a></li>
+              <li><a href="#gallery">갤러리</a></li>
+              <li><a href="#works">인생 작품</a></li>
+              <li><a href="#til">TIL</a></li>
+          </ul>
+      </nav>
+  </header>
 
     <!-- 프로필 히어로 -->
     <section class="hero" id="about">
       <div class="profile-card">
         <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+           <img src="./images/profile.jpg" alt="프로필 사진" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>밍구</h1>
+          <p class="tagline">기쁨이를 맡고 있는 밍구입니다!</p>
         </div>
       </div>
     </section>
@@ -43,30 +43,32 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>
+            안녕하세요! 8기 BE 밍구입니다.<br>
+            성장하는 사람이 되고 싶습니다.<br>
+        </p>
+          <a href="https://github.com/koomingu">Github</a>
       </section>
 
       <!-- 기본 정보 -->
       <section class="content-section" id="info">
         <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>구민서</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ENTJ (근데 E가 60%인)</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>동적인 운동, 손으로 만드는 것, 영화보거나 음악 들으면서 울기</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>연어, 육회, 초콜릿, 비리지 않는 것</td>
           </tr>
         </table>
       </section>
@@ -74,14 +76,17 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">내가 사랑하는 것들</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <img src="./images/gallery-1.jpg" alt="예쁜 노을" />
+          <img src="./images/gallery-2.jpg" alt="우리 집 애기들" />
+          <img src="./images/gallery-3.jpg" alt="인생 카이센동" />
+          <img src="./images/gallery-4.jpg" alt="내가 요즘 사랑하는 아이" />
+          <img src="./images/gallery-5.jpg" alt="두쫀쿠는 많이 먹어야죠" />
+          <img src="./images/gallery-6.jpg" alt="최애 커피" />
+          <img src="./images/gallery-7.jpg" alt="예쁜 사진" />
+          <img src="./images/gallery-8.jpg" alt="부산에 눈이 안와서 경주월드에서 눈사람 만드는 사람" />
+          <img src="./images/gallery-9.jpg" alt="좋아하는 풍경" />
         </div>
       </section>
 
@@ -89,18 +94,47 @@
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
         <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
           <article class="work-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+                <iframe
+                        width="100%"
+                        height="315"
+                        src="https://www.youtube.com/embed/YcEUd8mKYH8"
+                        title="장송의 프리렌 OP - YOASOBI '勇者'"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>장송의 프리렌 (葬送のフリーレン)</h3>
+              <p>
+                  '장송의 프리렌'은 마왕을 물리친 용사 일행의 모험이 끝난 지점부터 시작하여, 영겁의 시간을 사는 엘프 마법사 프리렌이 동료들의 죽음을 겪으며 비로소 '인간'이라는 존재를 이해하기 위해 떠나는 두 번째 여정을 그립니다. 10년이라는 긴 모험조차 찰나로 여겼던 그녀가 뒤늦은 후회와 함께 과거의 발자취를 되짚으며, 흩어진 기억 조각 속에서 용사 힘멜이 남긴 다정함과 인연의 소중함을 깨달아가는 과정이 감동적입니다. 단순히 적을 물리치는 서사를 넘어 시간의 상대성과 상실, 그리고 남겨진 자의 성찰을 잔잔하고도 철학적인 시선으로 풀어내어, 삶의 매 순간이 얼마나 빛나는 선물인지를 일깨워주는 아름다운 작품입니다.
+              </p>
             </div>
           </article>
         </div>
+          <div class="works-list">
+              <article class="work-card">
+                  <div class="work-thumbnail">
+                      <iframe
+                              width="100%"
+                              height="315"
+                              src="https://www.youtube.com/embed/sG5rmHBiruI"
+                              title="약사의 혼잣말 OP - 녹황색사회 '꽃이 되어줘(花になって)'"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="work-info">
+                      <h3>약사의 혼잣말</h3>
+                      <p>
+                          '약사의 혼잣말'은 화려한 동양풍 제국의 후궁을 배경으로, 납치되어 하녀로 팔려 온 약사 소녀 마오마오가 자신의 해박한 약초 지식과 냉철한 관찰력을 바탕으로 궁중의 기괴한 사건들을 해결해 나가는 궁중 미스터리물입니다. 매력적인 캐릭터들이 빚어내는 미묘한 관계성과 탄탄한 수사물적 요소가 어우러져, 한 번 시작하면 멈출 수 없는 몰입감을 주는 아름다운 작품입니다.
+                      </p>
+                  </div>
+              </article>
+          </div>
       </section>
 
       <!-- TIL (Today I Learned) -->
@@ -130,7 +164,6 @@
 
         <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
           <article class="til-item">
             <time>2026-03-15</time>
             <h3>HTML 시멘틱 태그</h3>
